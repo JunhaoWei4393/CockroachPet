@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 虚拟环境
+.venv/
+
+# PyInstaller 构建产物
+build/
+dist/
+*.log
+
+# 历史版本归档
+archive/
+
+# IDE
+.idea/
+.vscode/

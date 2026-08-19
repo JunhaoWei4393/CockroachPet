@@ -1,0 +1,21 @@
+{
+  "body_size": 40,
+  "opacity": 1.0,
+  "speed_max": 600,
+  "damping": 0.93,
+  "wander_strength": 250,
+  "wander_direction_change": 3.5,
+  "attract_distance": 200,
+  "attract_strength": 800,
+  "dead_zone": 30,
+  "scare_speed_threshold": 800,
+  "scare_distance": 150,
+  "scare_duration": 2.5,
+  "scare_flee_strength": 1800,
+  "scare_body_expand": 1.15,
+  "edge_margin": 60,
+  "edge_repulsion": 400,
+  "wrap_screen": true,
+  "autostart": false,
+  "always_on_top": true
+}
