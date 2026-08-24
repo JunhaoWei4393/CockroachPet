@@ -55,7 +55,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='CockroachPet_2026.08.05',
+    name='CockroachPet_2026.08.24',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
