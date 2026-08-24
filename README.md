@@ -70,7 +70,7 @@ pyinstaller CockroachPet.spec
 
 - [**LEARNING_GUIDE.md**](LEARNING_GUIDE.md) —— 从零讲透每一行代码的教学文档，适合 Python 初学者
 
-## 常见问题（Troubleshooting）
+## 🛠️ 常见问题（Troubleshooting）
 
 **Q：运行报错 `ModuleNotFoundError: No module named 'pystray'`？**
 A：依赖没装全，在项目根目录执行 `pip install -r requirements.txt`。
@@ -89,7 +89,6 @@ A：Windows 下双击 `.py` 会用控制台运行且不保留报错窗口。请�
 
 **Q：能用 macOS / Linux 吗？**
 A：目前**不支持**。透明窗口（`-transparentcolor`）与开机自启（`winreg`）都是 Windows 专属特性。
-
 
 ## 📜 许可
 
