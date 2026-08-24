@@ -4,6 +4,8 @@
 
 用 Python 原生 **tkinter** 绘制，无需任何游戏引擎，纯标准库 + 两个小依赖。
 
+> 🪟 **仅支持 Windows**（透明窗口与开机自启依赖 Windows 特性）　·　🐍 需要 **Python 3.8+**（推荐 3.10+）
+
 ![蟑螂预览](assets/cockroach_preview.png)
 
 ## ✨ 特性
@@ -16,9 +18,17 @@
 - 🪟 **系统托盘**：显示/隐藏、设置、退出
 - ⚙️ **配置热重载**：改 `config.json` 立即生效，无需重启
 
+## 🎬 效果演示
+
+![腿部爬行动画](assets/cockroach_legs.gif)
+
+![边界环绕演示](assets/wrap_demo.gif)
+
 ## 🚀 快速开始
 
 ### 运行源码
+
+> ⚠️ 请使用 **Windows** 与 **Python 3.8+**（推荐 3.10+）。
 
 ```bash
 pip install -r requirements.txt
@@ -59,6 +69,27 @@ pyinstaller CockroachPet.spec
 ## 📖 文档
 
 - [**LEARNING_GUIDE.md**](LEARNING_GUIDE.md) —— 从零讲透每一行代码的教学文档，适合 Python 初学者
+
+## 常见问题（Troubleshooting）
+
+**Q：运行报错 `ModuleNotFoundError: No module named 'pystray'`？**
+A：依赖没装全，在项目根目录执行 `pip install -r requirements.txt`。
+
+**Q：蟑螂周围出现洋红色 / 不透明背景？**
+A：透明背景依赖 Windows 的透明色特性（Win10/11 正常）。若异常，请确认没有运行在其他系统或远程桌面环境下。
+
+**Q：系统托盘图标不显示？**
+A：确认 `pystray` 已安装；若仍不显示，重启资源管理器（任务管理器 → Windows 资源管理器 → 重新启动）。
+
+**Q：开机自启没生效？**
+A：部分杀毒软件会拦截注册表写入（`HKCU\Software\Microsoft\Windows\CurrentVersion\Run`），放行 `CockroachPet` 即可；可在设置界面关闭/开启后验证。
+
+**Q：双击 `main.py` 闪退？**
+A：Windows 下双击 `.py` 会用控制台运行且不保留报错窗口。请用命令 `python src/main.py` 运行，或直接使用打包好的 exe。
+
+**Q：能用 macOS / Linux 吗？**
+A：目前**不支持**。透明窗口（`-transparentcolor`）与开机自启（`winreg`）都是 Windows 专属特性。
+
 
 ## 📜 许可
 
